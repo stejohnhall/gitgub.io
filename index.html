@@ -3,159 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steve Hall | Fabric Engineering Notes</title>
+    <title>Stephen Hall | Microsoft Fabric Developer</title>
 
     <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: auto;
-            padding: 30px;
-            background-color: #f5f7fa;
-            color: #333;
+            font-family: "Segoe UI", sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
             line-height: 1.6;
         }
 
-        header {
-            text-align: center;
-            padding: 30px;
-            background: white;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        nav a {
+        a {
             text-decoration: none;
-            color: #0066cc;
-            margin: 0 15px;
-            font-weight: bold;
+            color: #38bdf8;
         }
 
-        .section {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 10px;
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+            text-align: center;
+            background:
+                linear-gradient(rgba(15,23,42,.9), rgba(15,23,42,.9)),
+                url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+            background-size: cover;
         }
 
-        .article-card {
-            border-left: 4px solid #0066cc;
-            padding-left: 15px;
-            margin-bottom: 15px;
+        .hero-content {
+            max-width: 900px;
         }
 
-        .article-card a {
-            text-decoration: none;
-            font-size: 18px;
-            color: #0066cc;
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: #38bdf8;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .primary {
+            background: #38bdf8;
+            color: #000;
+        }
+
+        .secondary {
+            border: 1px solid #38bdf8;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 4rem 2rem;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+            color: #38bdf8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: transform .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-post {
+            background: #1e293b;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 12px;
         }
 
         footer {
             text-align: center;
-            color: grey;
-            margin-top: 40px;
+            padding: 2rem;
+            color: #94a3b8;
+            border-top: 1px solid #334155;
         }
+
     </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Steve Hall</h1>
+<header class="hero">
+    <div class="hero-content">
 
-    <p>
-        Fabric Engineer | Data & Analytics Enthusiast
-    </p>
+        <h1>
+            Stephen Hall
+        </h1>
 
-    <p>
-        Sharing my learning journey in Microsoft Fabric,
-        Data Engineering, Analytics and Power BI.
-    </p>
+        <p class="subtitle">
+            Senior Microsoft Developer | Microsoft Fabric Specialist |
+            Power Platform Consultant
+        </p>
+
+        <p>
+            Building modern data platforms, automation solutions,
+            and business intelligence systems using Microsoft Fabric,
+            Power BI, Power Apps and Power Automate.
+        </p>
+
+        <div class="buttons">
+            #aboutAbout Me</a>
+            #blogRead Articles</a>
+        </div>
+
+    </div>
 </header>
 
-<nav>
-    index.htmlHome</a>
-    about.htmlAbout</a>
-    articles.htmlArticles</a>
-    certifications.htmlCertifications</a>
-</nav>
+<section id="about">
 
-<div class="section">
-    <h2>Welcome</h2>
+    <h2>About Me</h2>
 
     <p>
-        Welcome to Fabric Engineering Notes.
+        I am a Microsoft-certified developer specialising in
+        Microsoft Fabric, Power Platform, Power BI and enterprise
+        data solutions.
+
+        I enjoy designing scalable data platforms, developing
+        automation solutions, and helping organisations transform
+        raw data into actionable insights.
     </p>
 
-    <p>
-        This website documents my experiences,
-        learning projects, certifications and technical articles
-        focused on Microsoft Fabric, analytics engineering
-        and modern data platforms.
-    </p>
+</section>
 
-    <p>
-        My goal is to share practical insights while building
-        expertise within the Microsoft data ecosystem.
-    </p>
-</div>
-
-<div class="section">
-
-    <h2>Latest Articles</h2>
-
-    <div class="article-card">
-        fabric-journey.html
-            My Microsoft Fabric Journey
-        </a>
-        <p>
-            Why I decided to learn Microsoft Fabric and document my progress.
-        </p>
-    </div>
-
-    <div class="article-card">
-        understanding-lakehouses.html
-            Understanding Lakehouses
-        </a>
-        <p>
-            A beginner-friendly introduction to one of the key concepts in Microsoft Fabric.
-        </p>
-    </div>
-
-    <div class="article-card">
-        why-i-started-blogging.html
-            Why I Started Blogging
-        </a>
-        <p>
-            My reasons for sharing technical knowledge and learning publicly.
-        </p>
-    </div>
-
-</div>
-
-<div class="section">
+<section>
 
     <h2>Current Focus</h2>
 
-    <ul>
-        <li>Microsoft Fabric</li>
-        <li>Power BI</li>
-        <li>Lakehouses</li>
-        <li>Data Engineering</li>
-        <li>Cloud Analytics</li>
-    </ul>
+    <div class="cards">
 
-</div>
+        <div class="card">
+            <h3>Microsoft Fabric</h3>
+            <p>
+                Lakehouses, Data Engineering,
+                Notebooks, Pipelines and Fabric SQL.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Power Platform</h3>
+            <p>
+                Power Apps, Power Automate
+                and business process automation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Power BI</h3>
+            <p>
+                Enterprise reporting,
+                semantic models and DAX optimisation.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Microsoft Certifications</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>DP-600</h3>
+            <p>
+                Fabric Analytics Engineer Associate
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Future Goal</h3>
+            <p>
+                DP-700 Fabric Data Engineer
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Continuous Learning</h3>
+            <p>
+                Data Engineering, AI and
+                Azure technologies.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="blog">
+
+    <h2>Latest Articles</h2>
+
+    <div class="blog-post">
+        <h3>Getting Started with Microsoft Fabric</h3>
+        <p>
+            Placeholder for future article.
+        </p>
+    </div>
+
+    <div class="blog-post">
+        <h3>Fabric Notebook Best Practices</h3>
+        <p>
+            Placeholder for future article.
+        </p>
+    </div>
+
+    <div class="blog-post">
+        <h3>Lessons Learned from Real Projects</h3>
+        <p>
+            Placeholder for future article.
+        </p>
+    </div>
+
+</section>
 
 <footer>
+
     <p>
-        © 2026 Steve Hall | Fabric Engineering Notes
+        © 2026 Stephen Hall
     </p>
+
+    <p>
+        Microsoft Fabric • Power Platform • Data Engineering
+    </p>
+
 </footer>
 
 </body>
